@@ -120,8 +120,46 @@ nav a:hover {
 }
 
 
+/* Header Code - Tablet View */
+@media only screen and (max-width: 760px) and (min-width: 470px) {
+  .logo span {
+    display: none;
+  }
+  .small {
+    display: none;
+  }
+  .logo img {
+    height: 2.5rem;
+  }
+  .text .rightdiv {
+    margin-bottom: 2rem;
+    padding: 0rem;
+  }
+}
 
-
+/* Header Code - Mobile View */
+@media only screen and (max-width: 470px) {
+  .leftdiv {
+    max-width: 100%;
+    padding-top: 0rem;
+  }
+  .big {
+    display: none;
+  }
+  nav,
+  .small {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0rem;
+    margin: 0rem 0.5rem;
+  }
+  .text .rightdiv{
+    margin-bottom: 2rem;
+    padding: 0rem;
+  }
+}
 
 /* Banner Code */
 .banner {
@@ -169,8 +207,65 @@ nav a:hover {
   font-weight: normal;
 }
 
+/* Banner Code - Small Screen */
+@media only screen and (max-width: 760px) {
+  .leftdiv {
+    max-width: 100%;
+  }
+  .splitdiv {
+    flex-direction: column;
+  }
+  .banner {
+    padding-bottom: 2rem;
+  }
+  .text {
+    justify-content: center;
+    align-items: center;
+    padding: 0rem;
+    margin: 0rem;
+  }
+  .text h1 {
+    margin: 0rem;
+    padding-bottom: 2rem;
+  }
+  .banner .rightdiv {
+    padding-right: 0rem;
+    width: auto;
+  }
+}
 
+/* Banner Code - Tablet View */
+@media only screen and (max-width: 760px) and (min-width: 470px) {
+  .banner img {
+    height: 22.5rem;
+  }
+}
 
+/* Banner Code - Mobile View */
+@media only screen and (max-width: 470px) {
+  .banner {
+    padding: 4rem 0rem 2rem 0rem;
+  }
+  .banner h3 {
+    padding: 0rem 1rem;
+  }
+  .banner img {
+    height: 100%;
+    width: 100%;
+    padding: 0rem;
+    margin: 0rem;
+  }
+  .text {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .text h1 {
+    margin-left: 0rem;
+  }
+  .banner .rightdiv {
+    padding-right: 0rem;
+  }
+}
 
 /* About Section */
 .about {
@@ -243,6 +338,70 @@ nav a:hover {
   display: none;
 }
 
+/* About Code - Small Screen */
+@media only screen and (max-width: 760px) {
+  .about .rightdiv {
+    padding-right: 0rem;
+    padding-left: 0rem;
+    border: none;
+  }
+  .smallinfo {
+    padding: 1rem 0rem;
+    border: none;
+    border-top: 0.1rem solid gray;
+  }
+}
+
+/* About Code - Tablet View */
+@media only screen and (max-width: 760px) and (min-width: 470px) {
+  .moretext {
+    padding: 0rem 1rem;
+  }
+  .about .rightdiv {
+    width: 100%;
+  }
+  .smallinfo {
+    width: 100%;
+  }
+  .smallinfo img {
+    padding-left: 1rem;
+  }
+  .info img {
+    max-width: 90%;
+    height: auto;
+  }
+  #special {
+    border-top: 0.1rem solid gray;
+  }
+}
+
+/* About Code - Mobile View */
+@media only screen and (max-width: 470px) {
+  .info {
+    display: none;
+  }
+  .smallinfo {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #bigon {
+    display: none;
+  }
+  #smallon {
+    display: flex;
+    width: auto;
+    padding: 1rem 0rem;
+  }
+  .smallinfo img {
+    width: 100%;
+    max-width: 100%;
+  }
+  .subtext {
+    width: 90%;
+    justify-content: flex-start;
+  }
+}
 
 /* Learning Section */
 .learning {
@@ -308,7 +467,40 @@ nav a:hover {
   font-style: italic;
 }
 
-
+/* Learning Code - Mobile View */
+@media only screen and (max-width: 470px) {
+ .learning h2 {
+   color: black;
+ }
+ .row {
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   padding: 0rem;
+   margin: 0rem;
+ }
+ .box {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: gray;
+   color: white;
+   max-width: 100%;
+   width: 90%;
+   margin: 1rem;
+   margin-top: 0rem;
+ }
+ .box a{
+   color: white;
+ }
+ .box img {
+   display: none;
+ }
+ .subblurb  h4{
+   display: none;
+ }
+}
 
 /* Thesis Section */
 .title {
@@ -360,7 +552,15 @@ video {
   margin-bottom: 0rem;
 }
 
-
+/* Thesis Code - Mobile View */
+@media only screen and (max-width: 470px) {
+  video {
+    max-width: 100%;
+  }
+  #vid {
+    width: 100%;
+  }
+}
 
 /* Footer Code */
 footer {
@@ -390,4 +590,4 @@ footer {
   color: lightgray;
   padding-left: 1rem;
 }
-
+/* Thesis Code - Mobile View */
