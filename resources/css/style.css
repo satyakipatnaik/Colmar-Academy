@@ -1,0 +1,393 @@
+html,
+body {
+  max-width: 1500px;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  margin: auto;
+  background-color: gray;
+}
+
+.container {
+  width: 100%;
+  max-width: inherit;
+  border: 0.1rem solid gray;
+  border-top: none;
+}
+
+.splitdiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftdiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+.rightdiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 40%;
+}
+
+.leftdiv img {
+  max-width: 100%;
+}
+
+/* General Code - Small Screen */
+@media only screen and (max-width: 760px) {
+  .rightdiv {
+    width: 100%;
+    max-width: 100%;
+    padding: 2rem 0rem;
+  }
+  .leftdiv {
+    width: 100%;
+    max-width: 100%;
+    padding: 2rem 0rem;
+  }
+}
+
+/* Header Code */
+header {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  font-size: 1.5rem;
+  height: 4rem;
+  width: 100%;
+  max-width: inherit;
+  z-index: 1;
+  border-bottom: 0.1rem solid gray;
+  margin-top: 0rem;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 1rem;
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: gray;
+  padding: 0rem 0.5rem;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  color: black;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 1.5rem;
+}
+
+.big {
+  display: flex;
+}
+
+.small {
+  display: none;
+}
+
+.logo span {
+  font-weight: bold;
+}
+
+#academy {
+  color: black;
+  font-weight: normal;
+}
+
+
+
+
+
+/* Banner Code */
+.banner {
+  padding-top: 4rem;
+  background-color: lightgray;
+  color: dimgray;
+  border-bottom: 0.1rem solid gray;
+}
+
+.text {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+}
+
+.text a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: dimgray;
+  color: lightgray;
+  width: 12.5rem;
+  padding: 0.5rem;
+  margin: 0rem;
+  margin-top: 1.5rem;
+  text-decoration: none;
+  border-radius: 0.25rem;
+}
+
+.text a:hover {
+  background-color: black;
+  font-weight: bold;
+}
+
+.text h1 {
+  color: black;
+  margin: 2rem, 0rem, 2rem, 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.text h3 {
+  margin: 0rem;
+  font-style: italic;
+  font-weight: normal;
+}
+
+
+
+
+/* About Section */
+.about {
+  background-color: white;
+}
+
+.about .rightdiv {
+  justify-content: space-between;
+  margin: 0rem;
+  padding: 0rem 1rem;
+  height: auto;
+}
+
+.smallinfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border-top: 0.1rem solid gray;
+  border-left: 0.1rem solid gray;
+  width: 100%;
+  padding: 1rem;
+}
+
+.smallinfo img {
+  width: 100%;
+  max-width: 35%;
+  padding-right: 1rem;
+}
+
+.moretext h2 {
+  color: black;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.moretext h4,
+.moretext h5 {
+  font-weight: normal;
+}
+
+.subtext h3,
+.subtext h4 {
+  padding-bottom: 0.5rem;
+  margin: 0rem;
+}
+
+.subtext h3 {
+  font-size: 1.25rem;
+  color: black;
+}
+
+.subtext h4 {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.subtext a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+#special {
+  border-top: none;
+}
+
+#smallon {
+  display: none;
+}
+
+
+/* Learning Section */
+.learning {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+  padding-bottom: 2rem;
+}
+.learning h2 {
+  padding: 2rem 0rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: black;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  max-width: 25%;
+  width: 100%;
+  margin: 1rem;
+  margin-top: 0rem;
+}
+
+.box img {
+  max-width: 100%;
+}
+
+.row .second {
+  margin-bottom: 2rem;
+}
+
+.subblurb {
+  margin: 1rem;
+}
+
+.box a{
+  text-decoration: none;
+  color: black;
+}
+
+.box h3,
+.box h4 {
+  margin: 0rem;
+  padding: 0rem;
+}
+
+.box h4 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+}
+
+
+
+/* Thesis Section */
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: white;
+  line-height: 1rem;
+  padding-top: 1rem;
+}
+
+.thesis {
+  background-color: white;
+}
+
+.video h2 {
+  color: black;
+}
+
+video {
+  max-width: 90%;
+  padding: 0rem;
+}
+
+#vid {
+  width: 70%;
+  padding: 2rem 0rem;
+  padding-top: 1rem;
+}
+
+.thesis .smallinfo {
+  border-top: none;
+  border-bottom: 0.1rem solid gray;
+  padding-right: 0rem;
+  max-width: 90%;
+}
+
+.thesis #special {
+  border-top: 0.1rem solid gray;
+}
+
+.thesis .moretext {
+  max-width: 90%;
+  padding: 0rem;
+}
+
+.thesis h2 {
+  margin-bottom: 0rem;
+}
+
+
+
+/* Footer Code */
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: lightgray;
+  background-color: white;
+  border-top: 0.1rem solid gray;
+}
+
+.copyright {
+  padding-left: 1rem;
+}
+
+.termsprivacy {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 1rem;
+}
+
+.termsprivacy a {
+  text-decoration: none;
+  color: lightgray;
+  padding-left: 1rem;
+}
+
