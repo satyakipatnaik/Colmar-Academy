@@ -106,6 +106,11 @@ nav a:hover {
   display: flex;
 }
 
+.links {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .small {
   display: none;
 }
@@ -115,7 +120,7 @@ nav a:hover {
 }
 
 #academy {
-  color: black;
+  color: gray;
   font-weight: normal;
 }
 
@@ -165,7 +170,7 @@ nav a:hover {
 .banner {
   padding-top: 4rem;
   background-color: lightgray;
-  color: dimgray;
+  color: black;
   border-bottom: 0.1rem solid gray;
 }
 
@@ -180,7 +185,7 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   background-color: dimgray;
-  color: lightgray;
+  color: white;
   width: 12.5rem;
   padding: 0.5rem;
   margin: 0rem;
@@ -269,7 +274,7 @@ nav a:hover {
 
 /* About Section */
 .about {
-  background-color: white;
+  background-color: rgb(231,245,254);
 }
 
 .about .rightdiv {
@@ -327,7 +332,7 @@ nav a:hover {
 .subtext a {
   text-decoration: none;
   font-weight: bold;
-  color: black;
+  color: blue;
 }
 
 #special {
@@ -409,7 +414,7 @@ nav a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: lightgray;
+  background-color: black;
   padding-bottom: 2rem;
 }
 .learning h2 {
@@ -453,6 +458,10 @@ nav a:hover {
 .box a{
   text-decoration: none;
   color: black;
+}
+
+.subblurb h3{
+  font-weight: bold;
 }
 
 .box h3,
@@ -503,18 +512,18 @@ nav a:hover {
 }
 
 /* Thesis Section */
-.title {
+.exhibit {
   display: flex;
   justify-content: center;
   align-items: center;
   color: black;
-  background-color: white;
+  background-color: rgb(231,245,254);
   line-height: 1rem;
   padding-top: 1rem;
 }
 
 .thesis {
-  background-color: white;
+  background-color: rgb(231,245,254);
 }
 
 .video h2 {
@@ -551,6 +560,12 @@ video {
 .thesis h2 {
   margin-bottom: 0rem;
 }
+.exhibit h2 {
+  padding: 2rem 0rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: black;
+}
 
 /* Thesis Code - Mobile View */
 @media only screen and (max-width: 470px) {
@@ -568,26 +583,30 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  color: lightgray;
-  background-color: white;
+  color: black;
+  background-color: rgb(231,245,254);
   border-top: 0.1rem solid gray;
 }
 
 .copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
   padding-left: 1rem;
 }
 
 .termsprivacy {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   padding-right: 1rem;
 }
 
 .termsprivacy a {
   text-decoration: none;
-  color: lightgray;
+  color: black;
   padding-left: 1rem;
 }
 /* Thesis Code - Mobile View */
